@@ -411,53 +411,108 @@ button {
     }
 }
 .publicidad-sobrenosotros{
-    padding: 20px;
-    position: relative;
-    img{
-        width: 100%;
-        height: 300px;
-        display: flex;
-        border-radius: 10px;
-    }
-    h1{
-        color: rgb(255, 255, 255);
-        font-size: large;
-        text-align: left;
-        font-style: italic;
-        position: absolute;
-        top: 110px;
-        left: 50px;
-        font-size: 40px;
-    }
-    h3{
-        color: rgb(255, 255, 255);
-        font-size: large;
-        text-align: left;
-        font-style: normal;
-        position: absolute;
-        top: 170px;
-        left: 50px;
-        font-size: 20px;
-    }
+  height: 300px;
+  display: flex;
+  border-radius: 15px;
+  padding: 30px;
+  color: rgb(235, 228, 228);
+  background-image:
+    linear-gradient(to right, rgb(255, 119, 0), rgba(255, 119, 0, 0.313)),
+    url('./medios/banner\ sobre\ nosotros.jpg'); 
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.338);
 }
-.beneficios{
-    h2{
-        text-align: center;
-        text-decoration: underline;
-        font-style: italic;
-        font-size: 20px;
-        margin: 20px;
+
+.contenido-texto {
+  max-width: 600px;
+  margin-top: 10px;
+}
+
+.publicidad-sobrenosotros h1 {
+  font-style: italic;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.publicidad-sobrenosotros h3 {
+  font-size: 18px;
+}
+
+.beneficios-box{
+     background-color:#ff7d03;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(134, 57, 19);
+    color: black;
+    padding: 7px 8px 3px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+.beneficios-box h2{
+         font-size: 12px;
     }
     h1{
         text-align: center;
-        font-size: 35px;
-        margin: 10px;
+        font-size: 30px !important;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
 
     }
     h4{
-        text-align: center;
         margin: 10px;
+        padding-top: 10px;
+        font-size: 16px !important;
+        max-width: 670px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
+
+.info-sobrenosotros{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 2rem; 
+  align-items: center;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: auto;
+}    
+.contenido-texto{
+    max-width: 500px;
+    text-align: left;
+}
+.contenido-texto h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.contenido-texto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  
+}
+.contenido-img{
+    display: flex;
+    justify-content: center;
+}
+.contenido-img img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+}
+.beneficios-sobrenosotros p{
+    text-align: center;
+    padding: 10px;
 }
 .cuadros-info-nosotros{
     display: grid;
@@ -471,7 +526,7 @@ button {
     background-color: #ff7d03;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px 6px rgba(0, 0, 0, 0.2);
 }
 .cuadros-info-nosotros img{
     width: 40px;
