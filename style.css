@@ -865,68 +865,105 @@ button {
 /* movile */
 
 @media only screen and (max-width: 480px) {
+    /* home */
     .form-select.w-25 {
       width: 90% !important;
     }
-    .imagenes-movile{
-        width: 100px !important; 
-    }
-    .responsive-textos
-        h3{
-            font-size: 12px;
-        }
-        button{
-            width: 80px;
-            height: 40px;
-        }
-    .btn-sm{
-            font-size: 10px !important;
-        }
-    .responsive-textos{
-        height: 250px;
-    }
-    .publicidad-sobrenosotros{
+    .mas-vendidos{
+        background-color: rgb(255, 77, 0);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgb(134, 57, 19);
+        color: black;
+        padding: 2px 8px ;
+        text-align: center;
+        display: inline-block;
+        font-weight: bold;
         display: flex;
-        padding: 12px;
+        justify-content: center;
+        width: fit-content;
+        font-size: 10px;
     }
-    .publicidad-sobrenosotros div{
-        position: relative;
-        display: grid;
+    .info-2 h1{
+        color: black;
+        font-size: 20px;
+        font-style: italic;
+        text-align: center;
+        padding: 10px;
     }
-    .publicidad-sobrenosotros img{
-        padding: 0;
-        margin: 0;
-        border-radius: 12px;
+    .info-2 h3{
+        color: black;
+        font-size: 10px;
+        font-style: normal;
+        text-align: center;
+        display: inline-block;
+        width: 100px;
+        width: fit-content;
+        align-items: center;
+    }
+   .productos01 {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .productos01 > div {
+        width: 200px; 
+        flex-shrink: 0;     
+        text-align: center;
+        padding: 6px;
+        border: 2px solid #ff7d03;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .productos01 h4 {
+        font-size: 12px;
+        margin: 4px 0;
+    }
+    .productos01 h3 {
+       font-size: 14px;
+       margin: 3px 0;
+    }
+    .productos01 button {
+       background-color: rgb(255, 77, 0);
+       color: black;
+       padding: 8px 12px;
+       border-radius: 10px;
+       margin-top: 10px;
+       margin-bottom: 10px;
+       border: none;
+       cursor: pointer;
+       font-size: 10px;
+    }
+    .productos01 img {
+        width: 100%;              
+        max-width: 180px;       
+        height: auto;
+        margin-bottom: 3px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .productos01 img:hover {
+        transform: scale(1.1); /* efecto zoom */
     }
     .publicidad-sobrenosotros h1{
-        font-size: 15px;
-        display: grid;
-        position: absolute;
-        margin-top: -18px;
-        max-width: 50%;
-
+        font-size: 20px !important;
+        box-shadow: 0, 5px, 5px 5px #000000;
     }
     .publicidad-sobrenosotros h3{
-        font-size: 12px;
-        position: absolute;
-        max-width: 60%;
-        max-height: 50%;
-        display: grid;
-        grid-template-areas: 
-        "blanco blanco blanco"
-        "titulo titulo titulo"
-        "texto texto texto"
-        "blanco blanco blanco";
-        grid-template-columns: 1fr 1,2fr 1,2fr 1fr;
-        margin-top: -30px;
+        font-size: 14px !important;
     }
-    .categorias{
+    .categorias{ 
         text-align: center;
+        padding: auto;
+        padding-top: 2px;
+    }
+    .info-box{
+        padding-top: 12px;
     }
     .categorias h2 {
         display: inline-block;
         text-align: center;
-        font-size: 10px;
+        font-size: 12px;
         font-weight: bold;
         background-color:#ff7d03;
         padding: 5px 15px;
@@ -935,7 +972,7 @@ button {
         width: auto;
     }
     .categorias h1{
-        padding-top: 10px;
+        padding: 6px;
         font-size: 15px;
     }
     .categorias h3{
@@ -943,24 +980,59 @@ button {
         max-width: 70%;
         display: inline-block;
         text-align: center;
-    }
-    .cuadros-info{
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding-top: -2px;
+    } 
+    .cuadros-info {
+        display: flex;
+        flex-direction: column;  
+        gap: 15px;
+        margin: 10px;
+        margin-top: 2px;
     }
     .cuadros{
         display: flex;
         margin: 10px;
-        padding: 5px 5px;
+        padding: auto;
     }
-    .contenido p{
-        font-size: 13px;
+    .wp{
+             width: 75px;
+             height: 75px;
     }
-    .contenido .logo{
-        width: 70px;
+    .info-ecommerce {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            gap: 15px;
     }
+    .columna {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+    }
+    .contenido {
+            text-align: center;
+            padding: 10px;
+    }
+    .contenido p {
+            font-size: 14px;
+            max-width: 90%;
+            margin: auto;
+    }
+    .iconos {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+    }
+    .iconos img {
+            width: 30px;
+    }
+    .contenido .logo {
+            width: 60px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+    }
+    /* footer */
     .logo-texto-footer img{
         width: 70px;
         display: flex;
@@ -994,150 +1066,8 @@ button {
     }
     .izquierda-footer .icono-button{
         width: 15px;
-    }
-    .mas-vendidos h2{
-        font-size: 12px;
-        margin-top: 4px;
-    }
-    .mas-vendidos {
-        padding: 2px 8px;
-    }
-    .info-2 h1{
-        font-size: 25px;
-        padding: 18px;
-    }
-    .info-2 h3{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 15px;
-        font-size: 12px;
-        padding-top: 2px;   
-    }
-    .wp{
-        width: 75px;
-        height: 75px;
-    }
-    .movile-home span{
-        font-size: 12px;
-    }
-    .caja-home {
-        min-width: 50px !important;
-      }
-    }
-    
-
-
-        
-
-
-    
-  
-
-
-
-/* media query movile antes de usar boostrap */
-    /* header {
-        flex-direction: column;
-    }
-    .publicidad{
-        padding: 8px;
-    }
-    .publicidad .texto1 {
-        font-size: 20px; 
-        top: 30px; 
-        left: 25px;
-    }
-    .publicidad .texto2{
-        font-size: 20px;
-        top: 80px;
-        left: 25px;
-    }
-    .publicidad h1{
-        font-size: 35px;
-        top: 45px;
-        left: 25px;
-    }
-    .info{
-         display: flex;
-         padding-top: 2px;
-         flex-direction: row;
-         justify-content: center;
-         gap: 10px;
-         flex-wrap: wrap; 
-    }
-    .info div{
-        display: flex;
-        border-radius: 9px;
-        padding: 2px 8px;
-        gap: 9px;
-        max-width: 110px;
-        background-color: rgb(255, 77, 0);
-        box-shadow: 0 4px 8px rgba(134, 57, 19, 0.323);
-    }
-    .info img{
-        width: 20px;
-        height: 20px;
-    }
-    .info h2{
-        margin: 0;
-        font-size: 12px;
-        color: black;
-    }
-    .mas-vendidos{
-        background-color: rgb(255, 77, 0);
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgb(134, 57, 19);
-        color: black;
-        padding: 2px 8px ;
-        text-align: center;
-        display: inline-block;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        width: fit-content;
-        font-size: 10px;
+    }  
 }
-.info-2 h1{
-        color: black;
-        font-size: 20px;
-        font-style: italic;
-        text-align: center;
-        padding: 10px;
-    }
-.info-2 h3{
-        color: black;
-        font-size: 10px;
-        font-style: normal;
-        text-align: center;
-        display: inline-block;
-        width: 100px;
-        width: fit-content;
-        align-items: center;
-    }
-.productos01{
-        display: flex;
-        justify-content: space-between;
-        margin: 20px;
-    }
-.productos01 h4 h3{
-            color: black;
-            font-size: small;
-            font-style: normal;
-            text-align: left;
-        }
-.productos01 button{
-            background-color: rgb(255, 77, 0);
-            position: relative;
-            color: black;
-            padding: 4px 8px;
-        }
-.productos01 img{
-            width: 160px;
-        }
-    } */
-
-
 /* tablet */
 
 @media only screen and (min-width: 481px) and (max-width: 978px) {
