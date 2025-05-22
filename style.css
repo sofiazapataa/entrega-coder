@@ -870,7 +870,7 @@ button {
       width: 90% !important;
     }
     .mas-vendidos{
-        background-color: rgb(255, 77, 0);
+        background-color:#ff7d03;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgb(134, 57, 19);
         color: black;
@@ -885,20 +885,25 @@ button {
     }
     .info-2 h1{
         color: black;
-        font-size: 20px;
+        font-size: 18px;
         font-style: italic;
         text-align: center;
         padding: 10px;
+        padding-top: 16px !important;
+    }
+    .info-2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     .info-2 h3{
         color: black;
-        font-size: 10px;
-        font-style: normal;
+        font-size: 12px;
         text-align: center;
         display: inline-block;
-        width: 100px;
-        width: fit-content;
-        align-items: center;
+        max-width: 90%;
+        padding: 10px;
+        padding-top: 2px;
     }
    .productos01 {
         flex-direction: column;
@@ -923,7 +928,7 @@ button {
        margin: 3px 0;
     }
     .productos01 button {
-       background-color: rgb(255, 77, 0);
+       background-color:#ff7d03;
        color: black;
        padding: 8px 12px;
        border-radius: 10px;
@@ -1032,6 +1037,68 @@ button {
             margin-bottom: 10px;
             border-radius: 10px;
     }
+
+    /* contactos */
+
+    .contacto-box{
+        padding: 12px 12px 5px 12px !important;
+    }
+    .presentacion-contactos h1{
+        padding-top: 0;
+        font-size: 23px !important;
+    }
+    .info-contactos2 h2{
+        font-size: 13px !important;
+    }
+    .formulario-contacto h1{
+        font-size: 23px !important;
+        text-decoration: underline;
+        display: flex;
+        justify-content: left;
+    }
+
+    /* preguntas frecuentes */
+
+    .titulos h1{
+        font-size: 24px !important;
+        padding-top: 0 !important;
+    }
+    .titulos p{
+        font-size: 12px;
+    }
+    .cuestionario-info{
+        padding-bottom: 10px;
+    }
+    .cuestionario h2{
+        text-align: left;
+        text-decoration: solid;
+        background-color: #484848;
+        box-shadow: 2px 5px rgba(0, 0, 0, 0.132);
+        border: #ff7d031e;
+        border-radius: 6px;
+        color: rgb(255, 140, 0);
+        padding: 10px;
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .cuestionario li{
+        list-style-type: circle !important;
+        font-size: 13px;
+    }
+    .cuestionario h3{
+      font-size: 13px;
+      margin-left: 12px;
+      font-weight:normal;
+    }
+
+    /* sobre nosotros */
+
+
+
+    /* tienda */
+
+
+
     /* footer */
     .logo-texto-footer img{
         width: 70px;
@@ -1070,15 +1137,15 @@ button {
 }
 /* tablet */
 
-@media only screen and (min-width: 481px) and (max-width: 978px) {
+/* @media only screen and (min-width: 481px) and (max-width: 978px) {
     header{
 
     }
-}
+} */
 
 /* desktop */
-@media only screen and (min-width:979px) {
+/* @media only screen and (min-width:979px) {
     header{
 
     }
-}
+} */
