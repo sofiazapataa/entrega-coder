@@ -1093,7 +1093,38 @@ button {
 
     /* sobre nosotros */
 
-
+    .info-sobrenosotros{
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .contenido-texto h1{
+        font-size: 23px !important;
+        padding-top: 0;
+    }
+    .contenido-texto p{
+        font-size: 12px;
+    }
+   .publicidad-sobrenosotros {
+    padding-bottom: 10px;
+    margin-bottom: 55px; 
+    }
+    .beneficios-box{
+        padding-top: 10px;
+    }
+    .beneficios-sobrenosotros h1{
+        font-size: 23px !important;
+    }
+    .beneficios-sobrenosotros p{
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+    .cuadros-info-nosotros {
+    margin-top: -20px; 
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    justify-items: center; 
 
     /* tienda */
 
